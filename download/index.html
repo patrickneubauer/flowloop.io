@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Refresh" content="0; url='https://apps.apple.com/us/app/flowloop/id1530396814'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186096324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-186096324-1');
+    </script>
+	
+
+    <script>
+          // Reads the value of a cookie by name or returns empty string
+          function getCookie(name) {
+              var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+              return b ? b.pop() : '';
+          }
+
+          // Actually starting analytics up
+          function addAnalytics() {
+              window.dataLayer = window.dataLayer || [];
+
+              function gtag() {
+                  dataLayer.push(arguments);
+              }
+
+              gtag('js', new Date());
+              gtag('config', 'UA-122671033-1');
+          }
+
+          // Waiting for the load event
+          window.addEventListener("load", function () {
+              // Reading "cookieconsent_status" cookie
+              const cookieConsent = getCookie('cookieconsent_status');
+
+              // Start analytics if user consented or did not deny
+              if (cookieConsent === 'allow' || cookieConsent === '') {
+                  addAnalytics();
+              }
+
+              // Initialise cookie consent banner
+              window.cookieconsent.initialise({
+                  "palette": {
+                      "popup": {
+                          "background": "#e8e8e8",
+                          "text": "#404040"
+                      },
+                      "button": {
+                          "background": "#4f4f4f",
+                          "text": "#ffffff"
+                      }
+                  },
+                  "type": "opt-out",
+                  "content": {
+                      "allow": "Approve",
+                      "dismiss": "Approve",
+                      "deny": "Reject"
+                  },
+                  // Reload the page on user choice to make sure cookie is set
+                  onStatusChange: function (status, chosenBefore) {
+                      location.reload();
+                  }
+              })
+          });
+      </script>
+	
+  <title>Download FlowLoop</title>
+  
+	    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<!-- ========== Body Starts ========== -->
+<body>
+	
+	<div class="title">
+        Redirecting to <a href="https://apps.apple.com/us/app/flowloop/id1530396814">Apple App Store entry of flowloop</a>...
+    </div>
+  
+</body>
+<!-- ========== End of Body ========== -->
+</html>

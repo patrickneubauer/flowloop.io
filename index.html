@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="flowloop is a simple yet effective time management tool boosting productivity in your daily activities. FlowLoop enables you to autopilot your flow state experience by visually and audibly guiding you during phases of work and break.">
+  <meta name="keywords" content="time management, pomodoro, focus, concentration, flow, mindset, work, play, productivity, app, technique, flowloop">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MD25FR6');</script>
+  <!-- End Google Tag Manager -->
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-186096324-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-186096324-1');
+    </script>
+
+    <link href="static/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="static/css/cookieconsent.min.css"/>
+    <script src="static/js/cookieconsent.min.js" data-cfasync="false"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script>
+          // Reads the value of a cookie by name or returns empty string
+          function getCookie(name) {
+              var b = document.cookie.match('(^|[^;]+)\\s*' + name + '\\s*=\\s*([^;]+)');
+              return b ? b.pop() : '';
+          }
+
+          // Actually starting analytics up
+          function addAnalytics() {
+              window.dataLayer = window.dataLayer || [];
+
+              function gtag() {
+                  dataLayer.push(arguments);
+              }
+
+              gtag('js', new Date());
+              gtag('config', 'UA-122671033-1');
+          }
+
+          // Waiting for the load event
+          window.addEventListener("load", function () {
+              // Reading "cookieconsent_status" cookie
+              const cookieConsent = getCookie('cookieconsent_status');
+
+              // Start analytics if user consented or did not deny
+              if (cookieConsent === 'allow' || cookieConsent === '') {
+                  addAnalytics();
+              }
+
+              // Initialise cookie consent banner
+              window.cookieconsent.initialise({
+                  "palette": {
+                      "popup": {
+                          "background": "#e8e8e8",
+                          "text": "#404040"
+                      },
+                      "button": {
+                          "background": "#4f4f4f",
+                          "text": "#ffffff"
+                      }
+                  },
+                  "type": "opt-out",
+                  "content": {
+                      "allow": "Approve",
+                      "dismiss": "Approve",
+                      "deny": "Reject"
+                  },
+                  // Reload the page on user choice to make sure cookie is set
+                  onStatusChange: function (status, chosenBefore) {
+                      location.reload();
+                  }
+              })
+          });
+      </script>
+	
+  <title>Autopilot Your Workflow with flowloop</title>
+  
+	    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <script  src='static/js/index.js'></script>
+
+  <!-- Google Fonts -->  
+  <link href="https://Fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <!-- End -->
+
+  <!-- Plugin Css -->
+  <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+  <!-- End -->
+
+  <!-- Theme css -->
+  <link href="static/css/style.css" rel="stylesheet">
+  <link href="static/css/color/default.css" rel="stylesheet" id="color_theme">
+  <!-- End -->
+</head>
+
+<!-- ========== Body Starts ========== -->
+<body>
+  <!-- Google Tag Man<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD25FR6"
+ager (noscript) -->
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+  </div>
+
+   <!-- ========== Header Starts ========== -->
+  <header class="header-style-1">
+    <!-- container -->
+    <div class="container">
+      <!-- Nav -->
+      <nav class="navbar navbar-expand-md navbar-light bg-faded">
+        <!-- Logo  -->
+        <h1 class="navbar-brand">
+          <img src="static/img/flowloop-logo4-no-bg-0.25.png" alt="" width="50" alt="flowloop App Logo"/><a href="#">&nbsp;flowloop</a>
+        </h1>
+        <!-- / Logo  -->
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_bar" aria-controls="nav_bar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- / Mobile Toggle -->
+
+        <!-- Navbar -->
+        <div id="nav_bar" class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li><a class="" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Why us?</a></li>
+            <li><a href="#screenshots">Look &amp; Feel</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+        <!-- / Navbar -->
+      </nav>
+      <!-- / Nav -->
+    </div>
+    <!-- / container -->
+  </header>
+  <!-- ========== End Of Header ========== -->
+
+  <!-- ========== Home banner ========== -->
+  <section id="home" class="home-banner-03 bg-theme2d">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+			
+          <h1>Autopilot Your Workflow</h1>
+			<div><img src="static/img/app/FlowLoop - Bar Only Break In Progress.png" alt="flowloop progress bar short break (green)">
+          </div>
+          <div class="btn-bar" style="margin-bottom: 35px">
+             <a href="https://apps.apple.com/us/app/flowloop/id1530396814" target="_blank">
+			  <img src="static/img/download-mac-app-store.png" alt="download from mac app store"></a>
+          </div>
+        </div><!-- col -->
+        <div class="col-12 text-center">
+         
+          
+        </div>
+
+      </div><!-- row -->
+    </div><!-- Container -->
+  </section><!-- home-banner -->
+  <!-- ========== End Of Home Banner ========== -->
+
+  <!-- ========== About Start ========== -->
+  <section id="about" class="section">
+    <div class="container">
+		<div class="section-heading-02">
+              <h2>About flowloop</h2>
+            </div><!-- section-heading -->
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="about-box-01">
+            <p>flowloop is a simple yet effective time management tool <strong>boosting productivity</strong> in your daily activities. flowloop enables you to autopilot your flow state experience by visually and audibly guiding you during phases of work and break.</p>
+            <p> Flow is a powerful state of mind and an essential ingredient for crafting <strong>creative and prevailing work</strong>, however, at the cost of a distorted sense of time and control.</p>
+            <p>Research¹ ² has found that distractions, which take your attention away from the task at hand, are essential to <strong>recharge your focus –</strong>who would have thought the occasional trip to YourFavoriteDistraction.com fuels our ability to focus? Most of us, however, struggle to enter a state of flow and then, naturally, drain our capacity in the attempt to remain focused for extended periods of time. </p>
+            <p>Modeled on Francesco Cirillo’s perennially popular <a href="download/pomodoro-technique.pdf" title="Pomodoro Technique" target="new">Pomodoro Technique</a>, flowloop provides a stylish visual and audible manifestation of progress. &nbsp;</p>
+          </div>
+         
+        </div> <!-- col -->
+        <div class="col-md-6 align-self-center text-center">
+			<div class="about-box-01">
+          <p>
+            The pomodoro model optimizes focus and flow through periods of intense, distraction-free work (‘pomodoros’) separated by short breaks which aid assimilation. After four pomodoros, enjoy an extended break and start again.&nbsp; </p>
+            <p>
+              flowloop allows you to <strong>customize</strong> your own variations on the technique so that you can adapt it to your <strong>individual</strong> needs. Whilst the traditional <a href="download/pomodoro-technique.pdf" title="Pomodoro Technique" target="new">Pomodoro Technique</a> involves 25-minute work periods with 5-minute breaks, flowloop understands that your preferred conditions for optimal focus are as unique as you are. However you best find your flow state, flowloop has the modifications to suit you.  
+            </p>
+
+            <p>As well as helping you to achieve your immediate goals, flowloop trains your ability to effectively transition between work and play and thus strengthens your focus muscle and enhances your capacity to initiate a state of flow. &nbsp;</p>
+        </div>
+	    </div>
+      </div> <!-- row -->
+      <div class="btn-bar mt-35">
+            <a href="https://apps.apple.com/us/app/flowloop/id1530396814" class="btn-style-01">
+      <i class="fas fa-download"></i> &nbsp;DOWNLOAD FOR FREE</a>
+            </div>
+    </div> <!-- container -->
+  </section> <!-- section -->
+  <!-- ========== End Of About ========== -->
+
+  <!-- ========== Features Block ========== -->
+  <section id="features" class="section bg-gray">
+    <div class="container">
+	  <div class="section-heading-02">
+        <h2>Why us?</h2>
+      </div><!-- section-heading -->
+      <div class="row">
+
+        <div class="col-12 col-lg-4 col-md-6">
+           <div class="feature-01">
+            <div class="feature-icon">
+              <i class="fas fa-life-ring"></i>
+            </div><!-- Feature-Icon -->
+            <div class="feature-details">
+              <h5>Rescue  Precious Time&nbsp;</h5>
+              <p>flowloop is a simple yet powerful app that utilises a technique which is proven to better focus and reduce stress.¹ ²</p>
+            </div><!-- Feature-details -->
+          </div><!-- Feature -->
+        </div><!-- col -->
+
+        <div class="col-12 col-lg-4 col-md-6">
+           <div class="feature-01">
+            <div class="feature-icon">
+              <i class="fas fa-flag-checkered"></i>
+            </div><!-- Feature-Icon -->
+            <div class="feature-details">
+              <h5>User Friendly</h5>
+              <p>Simple user interface, easy to use and no-nonsense. Fabulous simplicity and permanent but unintrusive progress visibility.</p>
+            </div><!-- Feature-details -->
+          </div><!-- Feature -->
+        </div><!-- col -->
+
+        <div class="col-12 col-lg-4 col-md-6">
+           <div class="feature-01">
+            <div class="feature-icon">
+              <i class="far fa-bell"></i>
+            </div><!-- Feature-Icon -->
+            <div class="feature-details">
+              <h5>Personalizable&nbsp; &nbsp;</h5>
+              <p>Setup of preferred amount of loop iterations as well as length of work, break, and extended break phase.</p>
+            </div><!-- Feature-details -->
+          </div><!-- Feature -->
+        </div><!-- col -->
+
+        <div class="col-12 col-lg-4 col-md-6">
+           <div class="feature-01">
+            <div class="feature-icon">
+              <i class="far fa-comments"></i>
+            </div><!-- Feature-Icon -->
+            <div class="feature-details">
+              <h5>Bridge Interruptions</h5>
+              <p>Ability to pause and continue workflow when interrupted by your colleagues or babies.</p>
+            </div><!-- Feature-details -->
+          </div><!-- Feature -->
+        </div><!-- col -->
+
+         <div class="col-12 col-lg-4 col-md-6">
+           <div class="feature-01">
+            <div class="feature-icon">
+              <i class="far fa-thumbs-up"></i>
+            </div><!-- Feature-Icon -->
+            <div class="feature-details">
+              <h5>Accessibility</h5>
+              <p>Intuitive control and personalization offered via horizontal and vertical visualization and control of progress bar size.</p>
+            </div><!-- Feature-details -->
+          </div><!-- Feature -->
+        </div><!-- col -->
+
+        <div class="col-12 col-lg-4 col-md-6">
+           <div class="feature-01">
+            <div class="feature-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div><!-- Feature-Icon -->
+            <div class="feature-details">
+              <h5>Clean Design</h5>
+              <p>Integrates seamlessly with macOS. Focuses on the  Pomodoro core idea.</p>
+            </div><!-- Feature-details -->
+          </div><!-- Feature -->
+        </div><!-- col -->
+
+      </div><!-- row -->
+    </div><!-- container -->
+  </section>
+  <!-- ========== End Of Features Block ========== -->
+	
+	<!-- ========== Screenshots Block ========== -->
+  <section id="screenshots" class="promo-section bg-theme2d pt-45">
+    <div class="container">
+      <div class="section-heading-01">
+        <h2 style="color: white">Look &amp; Feel</h2>
+      </div><!-- section-heading -->
+
+      <div class="owl-carousel screenshots-slider app-screenshots-slider">
+        <div class="ss-item"><a href="static/img/app/app-store-size-reduced/FlowLoop - break.jpg" data-lightbox="screenshots"><img src="static/img/app/app-store-size-reduced/FlowLoop - break.jpg" title="" alt=""></a></div>
+        <div class="ss-item"><a href="static/img/app/app-store-size-reduced/FlowLoop - convenient and vertical positioning.jpg" data-lightbox="screenshots"><img src="static/img/app/app-store-size-reduced/FlowLoop - convenient and vertical positioning.jpg" title="" alt=""></a></div>
+    		<div class="ss-item"><a href="static/img/app/app-store-size-reduced/FlowLoop - extended break.jpg" data-lightbox="screenshots"><img src="static/img/app/app-store-size-reduced/FlowLoop - extended break.jpg" title="" alt=""></a></div>
+    		<div class="ss-item"><a href="static/img/app/app-store-size-reduced/FlowLoop - horizontal alignment and settings.jpg" data-lightbox="screenshots"><img src="static/img/app/app-store-size-reduced/FlowLoop - horizontal alignment and settings.jpg" title="" alt=""></a></div>
+	   </div>
+		<video width="1027 " height="385" style="margin-bottom: 1.5cm;" controls="controls" preload="none" poster="static/img/flowloop-demo-poster.jpg">
+  <source src="static/video/FlowLoop-Demo-v4-30fps-75percent-size.m4v" type="video/mp4">
+  <!--<source src="movie.ogg" type="video/ogg">-->
+Your browser does not support the video tag.
+</video>
+		
+    </div>
+  </section>
+  <!-- ========== End Of Screenshots Block ========== -->
+
+<!-- ========== Start Testimonial ========== -->  
+  <section class="section testimonial-area bg-gray">
+    <div class="section-heading-02">
+        <h2>Testimonials</h2>
+      </div><!-- section-heading -->
+    <div class="container">
+      <!--<div class="owl-carousel testimonial-slider">-->
+        <div class="item">
+          <div class="avtar-testimonial">
+            <div class="avtar-say">
+              <p>
+			I’ve always found it really hard to strike the balance between periods of hard work and time to reflect and consolidate. Frequently, I would immerse myself in work from the time I sat down at the computer in the morning right up until my lunch break, and then happily head off to eat feeling accomplished. But when it was time to get back to it, I would find myself struggling to concentrate for longer than a few minutes. I couldn’t work out what the problem was; I was doing so well in the morning but just couldn’t get off the ground in the afternoon. 
+				</p>
+
+				<p>
+It didn’t occur to me that working short breaks into my day was the answer – after all, we live in a society that prizes productivity above all and where colleagues frequently find themselves competing to be the last to leave the office. My ability to work for hours without a break was something I was proud of. Yet further research into my problem told me that scheduling time to step away from the screen and do something else could stop me from feeling so burnt out in the afternoons. Feeling sceptical, I decided to give the famed ‘<a href="download/pomodoro-technique.pdf" title="Pomodoro Technique" target="new">Pomodoro Technique</a>’ a try…
+				</p>
+				<p>
+There are several interpretations and adaptations of this particular method, and many apps that promise to boost productivity and help to get their users into an effective working pattern. Yet when a trusted colleague recommended that I download flowloop, I decided that this was the one to choose. 
+</p>
+				<p>
+What I really enjoy about flowloop is how unobtrusive it is on the screen. The app’s design is cool and clean, and the progress bar is small enough to sit at the side of whichever task I have open. As someone who is easily led astray by visual distractions, the ability to make the progress bar as small as possible is invaluable!
+</p>
+				<p>
+The various possibilities for customising the technique also set flowloop apart. Generally, I find that 25 minutes to concentrate and 5 minutes to make a cup of tea allows me to get into a flow state. However, having the freedom to alter this is incredibly helpful. For example, on a strict deadline, I’ll sometimes change to 50 minutes of concentration and 10 minutes of break. By contrast, when if I’m feeling tired or overwhelmed, flowloop lets me split my working day into shorter, manageable bites. 
+</p>
+				<p>
+I can now proudly say that my mornings of frenzied, unsustainable work and afternoons of staring out of the window are a thing of the past.
+			</p>
+				
+            </div>
+            <div class="avtar-info">
+              <div class="avtar"><img src="static/img/100x100.jpg" alt=""></div>
+              <h4>- A. M.</h4>
+              <p class="desg">United Kingdom</p> 
+            </div>
+          </div>
+        </div><!-- .item -->
+      <!--</div><!-- .owl-carousel testimonial-slider -->
+    </div><!-- .container -->
+  </section><!-- .section testimonial-area -->
+  <!-- ========== End Of Testimonial ========== -->
+
+  <!-- Promo Block -->
+  <section class="section gray-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 align-self-center">
+          <h2>Be productive now</h2>
+          <p>flowloop is available for <strong>free</strong> on the Mac App Store.</p>
+          <div class="btn-bar">
+            <a href="https://apps.apple.com/us/app/flowloop/id1530396814" target="_blank">
+				<img src="static/img/download-mac-app-store.png" alt="download from mac app store"></a>
+
+          </div>
+        </div> <!-- col -->
+        <div class="col-12 col-md-6 text-center align-self-center">
+          <img src="static/img/app/FlowLoop - All Bars.png" title="" alt="flowloop work bar (grey), short break bar (green), and extended break bar (blue)"/>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section> <!-- sections -->
+  <!-- End of Promo Block -->
+
+  
+<!-- ========== Download us Block ========== -->
+  <section id="download" class="download-section bg-gray pt-45">
+    <div class="container">
+      <div class="section-heading-01">
+        <h2>Boost your creative craftsmanship</h2>
+      </div><!-- section-heading -->
+		<div class="img-bar text-center">
+      </div>
+      <div class="btn-bar text-center pb-5" style="margin-top: 18px">
+  <a href="https://apps.apple.com/us/app/flowloop/id1530396814" target="_blank">
+	<img src="static/img/download-mac-app-store-black.png" alt="download from mac app store"></a>      </div>
+      
+    </div><!-- container -->
+  </section>
+  <!-- ========== End Of Download Block ========== -->
+ 
+
+  <!-- ========== Start Feedback ========== -->  
+  <section class="section testimonial-area">
+    <div class="section-heading-02">
+        <h2>Feedback</h2>
+      </div><!-- section-heading -->
+    <div class="container">
+      <h4>If you have been invited as early participant to evaluate our app, please consider sharing your experience.<br>
+        <br>
+      </h4>
+      <h2><a href="https://bit.ly/flowloop-survey" target="_blank">Visit Survey Page</a>&nbsp; &nbsp;</h2>
+      <h4><br>
+        Your support is highly appreciated<br>
+        <br>
+      </h4>
+      <h4>♥♥♥&nbsp;</h4>
+    </div><!-- .container -->
+  </section><!-- .section testimonial-area -->
+  <!-- ========== End Of Testimonial ========== -->
+	
+
+ <!-- ========== Blog ========== -->
+ 
+  <!-- ========== End Of Blog ========== -->
+
+  
+  
+
+
+  <!-- ========== footer Block ========== -->
+  <footer class="footer bg-theme2d"> 
+    <div class="container">
+      
+        <div class="subscribe-form" style="color: white">
+          <strong> References<br>
+          </strong> ¹ University of Illinois at Urbana-Champaign. <a href="https://www.sciencedaily.com/releases/2011/02/110208131529.htm">Brief diversions vastly improve focus, researchers find</a>. <em>ScienceDaily</em>, 8 February 2011.<br>
+² Ze Zhu, Lauren Kuykendall &amp; Xichao Zhang. <a href="https://doi.org/10.1111/joop.12246">The impact of within‐day work breaks on daily recovery processes: An event‐based pre‐/post‐experience sampling study</a>. <em>The British Psychological Society</em>, 2018.</div>
+    
+		<div style="color: white; text-align: center">
+          <p> <img src="static/img/pn-rocket.png" alt="" width="80" alt="Boosted Creation">&nbsp;</p>
+          <p> Made with ♥ in Switzerland </p>
+        </div>
+    </div>
+  </footer>
+  <!-- ========== End Of footer Block ========== -->
+
+  <!-- Jquery -->
+  <script src="static/js/jquery-3.2.1.min.js"></script>
+  <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+  <!-- End -->
+
+  <!-- Plugin JS -->
+  
+  <script src="static/plugin/bootstrap/js/popper.min.js"></script><!--bootstrap-->
+  <script src="static/plugin/bootstrap/js/bootstrap.js"></script><!--bootstrap-->
+  <script src="static/plugin/parallax/parallax.min.js"></script><!-- parallax library -->
+  <script src="static/plugin/mixitup/mixitup.min.js"></script><!-- mixitup -->
+  <script src="static/plugin/owl-carousel/js/owl.carousel.min.js"></script><!-- owl-carousel -->
+  <!-- End -->
+
+  <!-- Theme Js -->  
+  <script src="static/js/singlepagenav.jquery.js"></script>
+  <script src="static/js/custom.js"></script>
+  <script src="static/js/lightbox-plus-jquery.js"></script>
+  <!-- End -->
+
+<script>
+    lightbox.option({
+      'showImageNumberLabel': false
+    })
+</script>  
+</body>
+<!-- ========== End of Body ========== -->
+</html>
